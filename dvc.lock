@@ -12,15 +12,15 @@ stages:
     params:
       params.yaml:
         base.random_state: 15
-        base.test_size: 0.5
+        base.test_size: 0.1
         data_source.local_data_path: /home/shubham/DVC/DVC_Metrics_Tracking/Iris_Flower_Dataset.csv
         model.logistic_regression.average: weighted
-        model.logistic_regression.fit_intercept: true
+        model.logistic_regression.fit_intercept: false
         model.logistic_regression.multi_class: ovr
     outs:
     - path: reports/params.json
-      md5: 97a4e450dfe3c5f85660509219ca898e
-      size: 101
+      md5: db21306e8feeb63a9cde6b60e16812de
+      size: 102
     - path: reports/scores.json
-      md5: 33cf655883bf239049ff74c867f17e76
+      md5: 6a60a2dd3dd2c545540274b8e9173ff8
       size: 109
