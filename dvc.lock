@@ -7,20 +7,20 @@ stages:
       md5: ca5e72f040c30d6c8ad09f3981aa6adf
       size: 2616
     - path: code.py
-      md5: c929c4ac5cf869a24e8bca815b8f85c8
-      size: 2562
+      md5: 8c3e06586523770ee9c90c22146d8685
+      size: 2571
     params:
       params.yaml:
-        base.random_state: 5
+        base.random_state: 15
         base.test_size: 0.5
         data_source.local_data_path: /home/shubham/DVC/DVC_Metrics_Tracking/Iris_Flower_Dataset.csv
-        model.logistic_regression.average: micro
+        model.logistic_regression.average: weighted
         model.logistic_regression.fit_intercept: true
         model.logistic_regression.multi_class: ovr
     outs:
     - path: reports/params.json
-      md5: 6c18985be527b65053e2fc35ebaced23
-      size: 100
+      md5: 97a4e450dfe3c5f85660509219ca898e
+      size: 101
     - path: reports/scores.json
-      md5: d852871730bd5d9359f8023312ed3dbd
+      md5: 33cf655883bf239049ff74c867f17e76
       size: 109
