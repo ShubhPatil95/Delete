@@ -1,17 +1,17 @@
 base:
-  project: DVC_Metrics_Tracking
-  random_state: 10
-  test_size: 0.4
+  project: Testing
+  random_state: 20
+  test_size: 0.8
 
 data_source:
   local_data_path: /home/shubham/DVC/DVC_Metrics_Tracking/Iris_Flower_Dataset.csv
 
 model:
   logistic_regression:
-    fit_intercept: True
+    fit_intercept: true
     multi_class: ovr
-    average : micro
-    
+    average: micro
+
 reports:
   scores: /home/shubham/DVC/DVC_Metrics_Tracking/reports/scores.json
-  params : /home/shubham/DVC/DVC_Metrics_Tracking/reports/params.json
+  params: /home/shubham/DVC/DVC_Metrics_Tracking/reports/params.json
