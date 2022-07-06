@@ -15,12 +15,12 @@ stages:
         base.test_size: 0.1
         data_source.local_data_path: /home/shubham/DVC/DVC_Metrics_Tracking/Iris_Flower_Dataset.csv
         model.logistic_regression.average: weighted
-        model.logistic_regression.fit_intercept: false
+        model.logistic_regression.fit_intercept: true
         model.logistic_regression.multi_class: ovr
     outs:
     - path: reports/params.json
-      md5: db21306e8feeb63a9cde6b60e16812de
-      size: 102
+      md5: 42de3de80ca1c0a21ae0533497b9b633
+      size: 101
     - path: reports/scores.json
-      md5: 6a60a2dd3dd2c545540274b8e9173ff8
-      size: 109
+      md5: db78bf1a8ab4c4a534ccb681eb4f1388
+      size: 64

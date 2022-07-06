@@ -8,7 +8,7 @@ data_source:
 
 model:
   logistic_regression:
-    fit_intercept: False
+    fit_intercept: True
     multi_class: 'ovr'
     average : 'weighted'
     

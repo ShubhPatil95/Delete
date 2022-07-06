@@ -1,6 +1,6 @@
 {
     "test_size": 0.1,
     "random_state": 15,
-    "fit_intercept": false,
+    "fit_intercept": true,
     "multi_class": "ovr"
 }
