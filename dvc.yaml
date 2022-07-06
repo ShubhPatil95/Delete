@@ -1,0 +1,18 @@
+stages:
+  create_model:
+    cmd: python code.py --config=/home/shubham/DVC/DVC_Metrics_Tracking/params.yaml
+    deps:
+      - code.py
+      - Iris_Flower_Dataset.csv
+    params:
+      - base.random_state
+      - base.test_size
+      - data_source.local_data_path
+      - model.logistic_regression.fit_intercept
+      - model.logistic_regression.multi_class
+      - model.logistic_regression.average
+    metrics:
+      - reports/scores.json:
+          cache: false
+      - reports/params.json:
+          cache: false
