@@ -64,6 +64,7 @@ def Create_Model(config_path):
             "multi_class": multi_class        
         }
         json.dump(params, param, indent=4)
+        
 
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
